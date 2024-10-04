@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Alunos</title>
+    <link rel="stylesheet" href="ListaAluno.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><div><img src="Imagens/Vector.png" alt="Gestão de conteúdo"><a href="#gestao-de-conteudo">Gestão de Conteúdo</a></div></li>
+            <li><div><img src="Imagens/Vector (1).png" alt="Gestão de cursos"><a href="#gestao-de-cursos">Gestão de Cursos</a></div></li>
+            <li><div><img src="Imagens/Vector (2).png" alt="Gestão de turmas"><a href="#gestao-de-turmas">Gestão de Turmas</a></div></li>
+            <li><div><img src="Imagens/Vector (3).png" alt="Gestão de alunos"><a href="#gestao-de-alunos">Gestão de Alunos</a></div></li>
+        </ul>
+    </nav>
+
+        <div class="barra-inferior">
+            <div class="esquerda"><a href="#voltar" class="botao-voltar"><span><img src="Imagens/seta.png" alt="seta voltar"></span>Voltar</a></div>
+            <div class="centro"><span>Cascalho - Gestão de Alunos</span></div>
+            <div class="direita"><div class="circulo-usuario"><span>Nome de Usuário</span><a href="#sair-da-conta">Sair da Conta <img src="Imagens/setacontra.jpeg" alt="seta contraria"></a></div></div>
+        </div>
+    <main>
+        <h2>Lista de Alunos</h2>
+        <div class="curso-container">
+            <p class="no-cursos">Ainda não há alunos para exibir</p>
+            <p class="description">Clique no botão abaixo para adicionar alunos à sua escola</p>
+            <button class="criar-curso">
+                <img src="Imagens/icon.png" alt="Pencil Icon" class="icon"> Adicionar Alunos
+            </button>
+        </div>
+    </main>
+    <script>
+        document.querySelector('.criar-curso').addEventListener('click', function() {
+            let studentName = prompt('Digite o nome do aluno:');
+            if (studentName) {
+                let studentList = document.getElementById('student-list');
+                let studentItem = document.createElement('li');
+                studentItem.textContent = studentName;
+                studentList.appendChild(studentItem);
+                
+                // Esconde a mensagem "Ainda não há alunos para exibir"
+                document.querySelector('.no-cursos').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
+
+

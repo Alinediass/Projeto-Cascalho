@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Novo Vídeo</title>
+    <link rel="stylesheet" href="styleAddVideo.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><div><img src="Imagens/Vector.png" alt="Gestão de conteúdo"><a href="#gestao-de-conteudo">Gestão de Conteúdo</a></div></li>
+            <li><div><img src="Imagens/Vector (1).png" alt="Gestão de cursos"><a href="#gestao-de-cursos">Gestão de Cursos</a></div></li>
+            <li><div><img src="Imagens/Vector (2).png" alt="Gestão de turmas"><a href="#gestao-de-turmas">Gestão de Turmas</a></div></li>
+            <li><div><img src="Imagens/Vector (3).png" alt="Gestão de alunos"><a href="#gestao-de-alunos">Gestão de Alunos</a></div></li>
+        </ul>
+    </nav>
+        <div class="barra-inferior">
+            <div class="esquerda"><a href="#voltar" class="botao-voltar"><span><img src="Imagens/seta.png" alt="seta voltar"></span>Voltar</a></div>
+            <div class="centro"><span>Cascalho - Gestão de Conteúdo</span></div>
+            <div class="direita"><div class="circulo-usuario"><span>Nome de Usuário</span><a href="#sair-da-conta">Sair da Conta <img src="Imagens/setacontra.jpeg" alt="seta contraria"></a></div></div>
+        </div>
+    
+    <main>
+
+        <h1>Adicionar Vídeo</h1>
+        <section class="content-management">
+
+            <form action="#" method="POST">
+
+            <div class="form-container">
+                <div class="input-group">
+                    <input type="text" required>
+                    <label for="">Nome do vídeo</label>
+                    <span class="helper-text">Digite o nome do vídeo que será apresentado aos alunos.</span>
+                </div>
+                
+                <div class="input-group">
+                    <input type="link" required>
+                    <label for="">Link do vídeo</label>
+                    <span class="helper-text">Cole aqui o link do vídeo que deseja adicionar à biblioteca de vídeos do Cascalho.</span>
+
+                </div>
+            </div> 
+                <div class="container">
+                    <div class="title">Tags</div>
+                    <div class="description">As tags servem para categorizar e filtrar o conteúdo, clique em todas as caixas abaixo que o vídeo se encaixa.</div>
+                </div>
+                    <div class="tags">
+                        
+                        <div class="checkbox-container">
+                            <label for="idade">4-6 anos de idade</label>
+                            <input type="checkbox" id="idade">
+                        </div>
+                    
+                        <div class="checkbox-container">
+                            <label for="dinheiro">6-8 anos de idade</label>
+                            <input type="checkbox" id="dinheiro">
+                        </div>
+                    
+                        <div class="checkbox-container">
+                            <label for="aventura">8-10 anos de idade</label>
+                            <input type="checkbox" id="aventura">
+                        </div>
+                    
+                        <div class="checkbox-container">
+                            <label for="tempo">12 ou mais anos de idade</label>
+                            <input type="checkbox" id="tempo">
+                        </div>
+
+                        <div class="checkbox-container">
+                            <label for="idade">Guardar dinheiro</label>
+                            <input type="checkbox" id="idade">
+                        </div>
+                    
+                        <div class="checkbox-container">
+                            <label for="dinheiro">Compras</label>
+                            <input type="checkbox" id="dinheiro">
+                        </div>
+                    
+                        <div class="checkbox-container">
+                            <label for="aventura">Gastos essenciais</label>
+                            <input type="checkbox" id="aventura">
+                        </div>
+                    
+                        <div class="checkbox-container">
+                            <label for="tempo">Troco</label>
+                            <input type="checkbox" id="tempo">
+                        </div>
+
+                        <div class="checkbox-container">
+                            <label for="idade">Aventura</label>
+                            <input type="checkbox" id="idade">
+                        </div>
+                    
+                        <div class="checkbox-container">
+                            <label for="dinheiro">Plataforma</label>
+                            <input type="checkbox" id="dinheiro">
+                        </div>
+                    
+                        <div class="checkbox-container">
+                            <label for="aventura">Jogo da memória</label>
+                            <input type="checkbox" id="aventura">
+                        </div>
+                    
+                        <div class="checkbox-container">
+                            <label for="tempo">Estratégia</label>
+                            <input type="checkbox" id="tempo">
+                        </div>
+
+                        <div class="checkbox-container">
+                            <label for="idade">Até 2 minutos</label>
+                            <input type="checkbox" id="idade">
+                        </div>
+                    
+                        <div class="checkbox-container">
+                            <label for="dinheiro">Até 5 minutos</label>
+                            <input type="checkbox" id="dinheiro">
+                        </div>
+                    
+                        <div class="checkbox-container">
+                            <label for="aventura">5 a 10 minutos</label>
+                            <input type="checkbox" id="aventura">
+                        </div>
+                    
+                        <div class="checkbox-container">
+                            <label for="tempo">Mais de 10 minutos</label>
+                            <input type="checkbox" id="tempo">
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="line"></div>
+
+                        <div class="form-group">      
+                            <div class="input-container">
+                                <input type="text" required>
+                                <label for="">Link da miniatura do vídeo</label>
+                            </div>
+                            <div class="description-group">
+                                A miniatura ajuda a identificar o conteúdo mais facilmente de forma visual.
+                            </div>
+                        </div>    
+                    
+                            <div class="button-container">
+                                <button class="submit-button"><img src="Imagens/adicionar.png" alt="add" class="icon"> Adicionar vídeo</button>
+                            </div>
+
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
