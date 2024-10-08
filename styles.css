@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.custom-header {
+    width: 100%;
+    height: 108px;
+    top: -1px;
+    gap: 0px;
+    opacity: 1; /* Tornando visível */
+    background: #2A2831;
+    position: fixed;
+}
+
+.secondary-bar {
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(0deg, rgba(103, 80, 164, 0.08), rgba(103, 80, 164, 0.08));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 107px; /* Positioned right below the custom header */
+    z-index: 1; /* Ensuring it's on top */   
+}
+
+.secondary-bar p {
+    margin: 0;
+    width: 1272px;
+    height: 28px;
+  
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    color: #1C1B1F;
+}
+
+.login-container {
+    width: Fixed 379.5px;
+    height: Fixed 516.19px;
+    top: 171px;
+    left: 481px;
+    padding: 71.04px 35.07px 37.77px 35.07px;
+    gap: 22.48px;
+    border-radius: 17.99px 0px 0px 0px;
+    opacity: 0px; 
+}
+
+.login-container h2 {
+    
+    font-size: 32.98px;
+    font-weight: 500;
+    line-height: 38.65px;
+    text-align: center;
+    color: #5E605F;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.input-group input {
+    width: 283.64px;
+    height: 50.36px;
+    top: 132.53px;
+    left: 47.93px;
+    gap: 0px;
+    opacity: 0px;
+    padding: 10px 10px 10px 40px; /* Ajuste de padding para dar espaço ao ícone */
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Torna o input oval */
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #415cb6;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+}
+
+button {
+    width: 283.1px;
+    height: 49.82px;
+    gap: 0px;
+    opacity: 0px;
+    background: #6750A4;
+    border-radius: 25px;
+    color: #FFFFFF;  
+}
+
